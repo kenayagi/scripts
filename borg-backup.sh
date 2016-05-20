@@ -3,15 +3,8 @@
 # First run with: ./borg-backup.sh init
 # Latest version on https://raw.githubusercontent.com/kenayagi/scripts/master/borg-backup.sh
 
-# Set here YourPreferences
-export BORG_PASSPHRASE="YourPassword"
-BORG_REPOSITORY="ssh://root@borg.YourDomain:2222/opt/borg/YourPath"
-BORG_SOURCE="/"
-
-# Data retention
-BORG_KEEP_DAILY="14"
-BORG_KEEP_WEEKLY="6"
-BORG_KEEP_MONTHLY="1"
+# Load settings from a separate file
+source /usr/local/etc/borg-backup-settings.sh
 
 # Probably, you won't need to edit below
 BORG_VERSION="1.0.2"
