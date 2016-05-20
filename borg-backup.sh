@@ -5,7 +5,7 @@
 
 # Set here YourPreferences
 export BORG_PASSPHRASE="YourPassword"
-BORG_REPOSITORY="ssh://root@borg.YourDomain:2222//opt/borg/YourPath"
+BORG_REPOSITORY="ssh://root@borg.YourDomain:2222/opt/borg/YourPath"
 BORG_SOURCE="/"
 
 # Data retention
