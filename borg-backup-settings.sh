@@ -3,7 +3,7 @@
 
 # Mandatory settings
 export BORG_PASSPHRASE="YourPassword"
-BORG_REPOSITORY="ssh://root@borg.YourDomain:2222/opt/borg/YourPath"
+export BORG_REPOSITORY="ssh://root@borg.YourDomain:2222/opt/borg/YourPath"
 BORG_SOURCE="/"
 
 # Data retention
