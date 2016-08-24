@@ -7,7 +7,7 @@
 source /usr/local/etc/borg-backup-settings.sh
 
 # Probably, you won't need to edit below
-BORG_VERSION="1.0.6"
+BORG_VERSION="1.0.7"
 BORG_PATH="/usr/local/bin/borg"
 BORG_PREFIX="Backup-"
 BORG_SUFFIX=`date +%Y-%m-%d_%H-%M-%S`
