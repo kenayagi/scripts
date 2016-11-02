@@ -7,11 +7,11 @@
 source /usr/local/etc/borg-backup-settings.sh
 
 # Probably, you won't need to edit below
-BORG_VERSION="1.0.7"
+BORG_VERSION="1.0.8"
 BORG_PATH="/usr/local/bin/borg"
 BORG_PREFIX="Backup-"
 BORG_SUFFIX=`date +%Y-%m-%d_%H-%M-%S`
-BORG_CREATE_PARAMS="-v --stats --compression zlib --exclude sh:/dev/* --exclude sh:/proc/* --exclude sh:/sys/* --exclude sh:/tmp/* --exclude sh:/run/* "
+BORG_CREATE_PARAMS="--compression zlib --exclude sh:/dev/* --exclude sh:/proc/* --exclude sh:/sys/* --exclude sh:/tmp/* --exclude sh:/run/* "
 
 if [ ! -f "$BORG_PATH" ]; then
   wget https://github.com/borgbackup/borg/releases/download/$BORG_VERSION/borg-linux64 -O /usr/local/bin/borg
