@@ -3,10 +3,7 @@
 # First run with: ./borg-backup.sh init
 # Latest version on https://raw.githubusercontent.com/kenayagi/scripts/master/borg-backup.sh
 
-# Load settings from a separate file
-source /usr/local/etc/borg-backup-settings.sh
-
-# Probably, you won't need to edit below
+# Default values
 BORG_VERSION="1.0.8"
 BORG_PATH="/usr/local/bin/borg"
 BORG_PREFIX="Backup-"
@@ -17,6 +14,9 @@ if [ ! -f "$BORG_PATH" ]; then
   wget https://github.com/borgbackup/borg/releases/download/$BORG_VERSION/borg-linux64 -O /usr/local/bin/borg
   chmod +x /usr/local/bin/borg
 fi
+
+# Load machine-specific settings from a separate file
+source /usr/local/etc/borg-backup-settings.sh
 
 if [ "$1" = "init" ]; then
   echo "Creating new repository..."
