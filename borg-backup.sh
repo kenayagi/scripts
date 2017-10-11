@@ -4,10 +4,10 @@
 # Latest version on https://raw.githubusercontent.com/kenayagi/scripts/master/borg-backup.sh
 
 # Default values
-BORG_VERSION="1.0.8"
+BORG_VERSION="1.1.0"
 BORG_PATH="/usr/local/bin/borg"
 BORG_PREFIX="Backup-"
-BORG_SUFFIX=`date +%Y-%m-%d_%H-%M-%S`
+BORG_SUFFIX=`date +%Y-%m-%d`
 BORG_CREATE_PARAMS="--compression zlib --exclude sh:/dev/* --exclude sh:/proc/* --exclude sh:/sys/* --exclude sh:/tmp/* --exclude sh:/run/* "
 
 if [ ! -f "$BORG_PATH" ]; then
