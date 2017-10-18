@@ -2,7 +2,7 @@
 # Set here your preferences for the script in mysql-separate-dump.sh
 
 # Backup Directory (without trailing slash)
-MSD_DEST_FOLDER="/srv/db-backup"
+MSD_DEST_FOLDER="/srv/backups/sql"
 
 # MySQL credentials
 MSD_SQL_USER="root"
