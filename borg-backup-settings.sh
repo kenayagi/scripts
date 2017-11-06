@@ -2,8 +2,8 @@
 # Set here your preferences for the script in /usr/local/bin/borg-backup.sh
 
 # Mandatory settings
-export BORG_PASSPHRASE="YourPassword"
-export BORG_REPOSITORY="ssh://root@borg.YourDomain:2222/backups/YourPath"
+export BORG_PASSPHRASE="YOURPASSWORD"
+export BORG_REPOSITORY="ssh://root@borg.YOURDOMAIN.com:2222/backups/YOURPATH"
 BORG_SOURCE="/"
 
 # Data retention
