@@ -4,7 +4,7 @@
 # Latest version on https://raw.githubusercontent.com/kenayagi/scripts/master/borg-backup.sh
 
 # Default values
-BORG_VERSION="1.1.4"
+BORG_VERSION="1.1.6"
 BORG_PATH="/usr/local/bin/borg"
 BORG_PREFIX="Backup-"
 BORG_SUFFIX=`date +%Y-%m-%d`
