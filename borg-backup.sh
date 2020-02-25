@@ -20,7 +20,7 @@ source /usr/local/etc/borg-backup-settings.sh
 
 if [ "$1" = "init" ]; then
   echo "Creating new repository..."
-  $BORG_PATH init -e repokey $BORG_REPOSITORY
+  $BORG_PATH init --encryption=repokey-blake2 $BORG_REPOSITORY
 fi
 
 $BORG_PATH create $BORG_CREATE_PARAMS $BORG_REPOSITORY::$BORG_PREFIX$BORG_SUFFIX $BORG_SOURCE
